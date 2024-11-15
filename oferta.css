@@ -1,0 +1,102 @@
+/* Reset */
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+
+        /* Body */
+        body {
+            font-family: Arial, sans-serif;
+            background-image: url('Fondo.jpg');
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            color: #00ff00;
+          }
+
+        /* Efecto luminoso alrededor del texto "Productos Destacados" con color verde */
+
+        .featured-heading {
+
+            font-size: 2em;
+          
+            color: #333; /* Color del texto */
+            text-shadow: 
+                0 0 5px rgba(0, 255, 0, 0.6),  /* Brillo suave de color verde */
+                0 0 10px rgba(0, 255, 0, 0.6), /* Brillo más fuerte */
+                0 0 15px rgba(0, 255, 0, 0.8), /* Resplandor más intenso */
+                0 0 20px rgba(0, 255, 0, 1),   /* Resplandor aún más intenso */
+                0 0 30px rgba(0, 255, 0, 1),   /* Resplandor más grande */
+                0 0 40px rgba(0, 255, 0, 1);   /* Resplandor máximo */
+            margin-bottom: 30px; /* Espaciado debajo del título */
+        }
+
+        /* Header */
+        header {
+            background-color: #333;
+            color: #fff;
+            padding: 20px;
+            text-align: center;
+        }
+
+        /* Navbar */
+        .navbar {
+            display: flex;
+            justify-content: center;
+            gap: 15px;
+        }
+
+        .navbar a {
+            color: #fff;
+            text-decoration: none;
+            padding: 10px 15px;
+            font-weight: bold;
+        }
+
+        .navbar a:hover { background-color: #555; border-radius: 5px; }
+
+        /* Product Detail Section */
+        .product-detail {
+            padding: 40px 20px;
+            max-width: 1200px;
+            margin: auto;
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .product-image { width: 50%; }
+        .product-image img { width: 100%; height: auto; border-radius: 10px; }
+
+        .product-info { width: 45%; }
+        .product-info h2 { font-size: 2.5em; margin-bottom: 20px; }
+        .product-info p { font-size: 1.2em; margin-bottom: 20px; color: white; }
+
+        .price { font-size: 1.8em; font-weight: bold; color: #4CAF50; margin-bottom: 20px; }
+
+        .discount-price { font-size: 1.6em; font-weight: bold; color: #FF5722; text-decoration: line-through; margin-bottom: 10px; }
+
+        .offer-info { font-size: 1.2em; color: #FF5722; font-weight: bold; margin-bottom: 20px; }
+
+        .features ul { list-style: none; padding-left: 0; }
+        .features li { font-size: 1.2em; margin-bottom: 10px; color: white; }
+
+        .add-to-cart {
+            padding: 15px 30px;
+            background-color: #4CAF50;
+            color: #fff;
+            text-decoration: none;
+            font-size: 1.3em;
+            border-radius: 5px;
+        }
+
+        .add-to-cart:hover { background-color: #388E3C; }
+
+        /* Footer */
+        footer {
+            background-color: #333;
+            color: #fff;
+            padding: 20px;
+            text-align: center;
+        }
+
+        footer p { margin-bottom: 10px; }
+        footer .social-links { display: flex; justify-content: center; gap: 15px; }
+        footer .social-links a { color: #fff; font-size: 1.2em; }
+        footer .social-links a:hover { color: #4CAF50; }

@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Catálogo de Muebles</title>
+    <style>
+        /* Reset */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        /* Body */
+        body {
+          font-family: Arial, sans-serif;
+          background-image: url('Fondo.jpg');
+          background-size: cover;
+          background-position: center;
+          background-repeat: no-repeat;
+          color: #333;
+        }
+
+        /* Header */
+        header {
+            background-color: #333;
+            color: #fff;
+            padding: 20px;
+            text-align: center;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+
+        header h1 {
+            font-size: 2em;
+            margin-bottom: 10px;
+        }
+
+        /* Navbar */
+        .navbar {
+            display: flex;
+            justify-content: center;
+            gap: 15px;
+        }
+
+        .navbar a {
+            color: #fff;
+            text-decoration: none;
+            padding: 10px 15px;
+            font-weight: bold;
+            transition: background-color 0.3s;
+        }
+
+        .navbar a:hover {
+            background-color: #555;
+            border-radius: 5px;
+            color: #00ff00;
+        }
+        
+        .navbar a.active {
+            background-color: #555; /* Color de fondo del enlace marcado */
+            color: #00ff00; /* Color del texto */
+            border-radius: 5px;
+        }
+
+        /* Catalog Section */
+        .catalog {
+            padding: 40px 20px;
+            max-width: 1200px;
+            margin: auto;
+            text-align: center;
+        }
+
+        .catalog h2 {
+            font-size: 2em;
+            margin-bottom: 20px;
+            color: #00ff00;
+        }
+
+        .product-list {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+            justify-content: center;
+        }
+
+        .product-card {
+            background-color: #fff;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            width: 300px;
+            overflow: hidden;
+            transition: transform 0.3s;
+        }
+
+        .product-card:hover {
+            transform: translateY(-5px);
+        }
+
+        .product-card img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+        }
+
+        .product-info {
+            padding: 20px;
+        }
+
+        .product-info h3 {
+            font-size: 1.5em;
+            margin-bottom: 10px;
+            color: #333;
+        }
+
+        .product-info p {
+            color: #666;
+            margin-bottom: 15px;
+        }
+
+        .price {
+            font-size: 1.3em;
+            font-weight: bold;
+            color: #333;
+            margin-bottom: 10px;
+        }
+
+        .view-details {
+            display: inline-block;
+            padding: 10px 20px;
+            background-color: #4CAF50;
+            color: #fff;
+            text-decoration: none;
+            border-radius: 5px;
+            transition: background-color 0.3s;
+        }
+
+        .view-details:hover {
+            background-color: #388E3C;
+        }
+
+        /* Footer */
+        footer {
+            background-color: #333;
+            color: #fff;
+            padding: 20px;
+            text-align: center;
+            margin-top: 40px;
+        }
+
+        footer p {
+            margin-bottom: 10px;
+        }
+
+        footer .social-links {
+            display: flex;
+            justify-content: center;
+            gap: 15px;
+        }
+
+        footer .social-links a {
+            color: #fff;
+            font-size: 1.2em;
+            text-decoration: none;
+            transition: color 0.3s;
+        }
+
+        footer .social-links a:hover {
+            color: #4CAF50;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Header -->
+    <header>
+        <h1>MUEBLES</h1>
+        <div class="navbar">
+            <a href="index.html">Inicio</a>
+            <a href="punto_1.html" class="active">Catálogo</a>
+            <a href="punto_2.html">Ofertas</a>
+            <a href="punto_3.html">Contacto</a>
+        </div>
+    </header>
+
+    <!-- Catalog Section -->
+    <section class="catalog">
+        <h2>Catálogo de Productos</h2>
+        <div class="product-list">
+            <!-- Product Card 1 -->
+            <div class="product-card">
+                <img src="Sofa.jpg" alt="Sofá Moderno">
+                <div class="product-info">
+                    <h3>Sofá Moderno</h3>
+                    <p>Sofá de diseño moderno, perfecto para cualquier sala.</p>
+                    <div class="price">499.99 Bs</div>
+                    <a href="producto_1.html" class="view-details">Ver Detalles</a>
+                </div>
+            </div>
+            <!-- Product Card 2 -->
+            <div class="product-card">
+                <img src="Comedor.jpg" alt="Mesa de Comedor">
+                <div class="product-info">
+                    <h3>Mesa de Comedor</h3>
+                    <p>Mesa elegante de madera, ideal para 6 personas.</p>
+                    <div class="price">799.99 Bs</div>
+                    <a href="producto_2.html" class="view-details">Ver Detalles</a>
+                </div>
+            </div>
+            <!-- Product Card 3 -->
+            <div class="product-card">
+                <img src="Silla.jpg" alt="Silla de Oficina">
+                <div class="product-info">
+                    <h3>Silla de Oficina</h3>
+                    <p>Ergonómica y cómoda, perfecta para largas jornadas.</p>
+                    <div class="price">199.99 Bs</div>
+                    <a href="producto_3.html" class="view-details">Ver Detalles</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2024 Tienda de Muebles. Kevin Gamboa Mamani.</p>
+        <div class="social-links">
+            <a href="#">Facebook</a>
+            <a href="#">Instagram</a>
+            <a href="#">Twitter</a>
+        </div>
+    </footer>
+
+</body>
+</html>
